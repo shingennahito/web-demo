@@ -1,0 +1,16 @@
+.cafe-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .cafe-gallery img {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  }
+  

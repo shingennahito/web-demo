@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block title %} Home Page {% endblock %}
+<link rel="stylesheet" href="{{ url_for('static', filename='styles/images.css') }}">
+
+{% block content %}
+<h2>Welcome to My Coffee Shop</h2>
+<p>Here you can browse our selection of delicious coffees.</p>
+<div class="cafe-gallery">
+    <div class="row">
+        <div class="col-md-4">
+            <img src="{{ url_for('static', filename='images/anh1.jpg') }}" alt="Cafe Image 1">
+        </div>
+        <div class="col-md-4">
+            <img src="{{ url_for('static', filename='images/anh2.jpg') }}" alt="Cafe Image 2">
+        </div>
+        <div class="col-md-4">
+            <img src="{{ url_for('static', filename='images/anh3.jpg') }}" alt="Cafe Image 3">
+        </div>
+    </div>
+</div>
+{% endblock %}
